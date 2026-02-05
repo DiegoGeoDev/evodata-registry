@@ -49,6 +49,30 @@ export default defineConfig({
           },
         ],
       },
+      {
+        name: 'zard-setup',
+        type: 'lib',
+        add: 'optionally-on-init',
+        files: [
+          {
+            path: 'src/app/shared/core/provider/providezard.ts',
+          },
+          {
+            path: 'src/app/shared/core/provider/event-manager-plugins/zard-event-manager-plugin.ts',
+          },
+          {
+            path: 'src/app/shared/core/provider/event-manager-plugins/zard-debounce-event-manager-plugin.ts',
+          },
+          {
+            path: 'src/styles.css',
+            role: 'doc',
+          },
+          {
+            path: 'ZARD_SETUP.md',
+            role: 'doc',
+          },
+        ],
+      },
     ],
   },
   // configure where stuff comes from here
