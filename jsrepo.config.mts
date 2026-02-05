@@ -18,7 +18,7 @@ export default defineConfig({
     defaultPaths: {
       ui: 'src/app/shared/components',
       utils: 'src/app/shared/utils',
-      core: 'src/app/shared/core',
+      lib: 'src/app/shared/core',
     },
     items: [
       {
