@@ -1,59 +1,86 @@
-# EvodataRegistry
+arrumar registry para salvar todos os arquivos de src\app\shared\core do zard
+arrumar registry para salvar em src\app\shared\core no client
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.0.
+arrumar jsrepo.config.mts
 
-## Development server
+arrumar para funcionar com github
+npx jsrepo init github:seu-usuario/evodata-registry
+npx jsrepo add button
 
-To start a local development server, run:
+# registry
 
-```bash
-ng serve
+https://www.jsrepo.dev/docs/create-a-registry
+
+criar jsrepo.config.mts ou executar
+npx jsrepo init
+
+editar jsrepo.config.mts informando os componentes que desejar compartilhar
+
+fazer o build
+npx jsrepo build
+
+# client
+
+https://www.jsrepo.dev/docs/jsrepo-config
+
+precisa instalar o pacote
+npm install -D jsrepo
+
+precisa criar jsrepo.config.mts na raiz do projeto e e adicionar o provider fs => tbm vai precisar adicionar do github depois
+ou executar
+npx jsrepo init
+
+```typescript
+import { defineConfig } from 'jsrepo';
+import { fs } from 'jsrepo/providers';
+
+export default defineConfig({
+  providers: [fs()],
+  registries: [],
+  paths: {},
+});
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+testar local
 
-## Code scaffolding
+npx jsrepo init fs://C:/Users/loqev/Documents/diego/cursos/angular/evodata-registry
+npx jsrepo add button
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+--
 
-```bash
-ng generate component component-name
-```
+Resumo das mudanças:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+1. Novo item no registry: zard-setup
+   Tipo: lib (biblioteca/setup)
+   Modo de instalação: optionally-on-init - O usuário será perguntado se quer instalar durante o jsrepo init
 
-```bash
-ng generate --help
-```
+Inclui:
+providezard.ts - Provider principal
+Plugins de event manager (.prevent, .stop, etc)
+styles.css como documentação (não será copiado automaticamente)
+ZARD_SETUP.md com instruções completas
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+2. Como funciona no projeto client:
 
 ```bash
-ng test
+# Ao fazer init, o usuário será perguntado se quer o zard-setup
+npx jsrepo init fs://C:/Users/loqev/Documents/diego/cursos/angular/evodata-registry
+
+# Ou adicionar manualmente depois
+npx jsrepo add zard-setup
+
+# Para incluir os arquivos de documentação (styles.css e README)
+npx jsrepo add zard-setup --with-docs
 ```
 
-## Running end-to-end tests
+3. O que é instalado automaticamente:
+   ✅ providezard.ts e event-manager-plugins
+   ✅ Dependências npm necessárias
 
-For end-to-end (e2e) testing, run:
+4. O que o usuário precisa fazer manualmente:
+   Adicionar provideZard() no app.config.ts
+   Copiar as variáveis CSS do styles.css (incluído com --with-docs)
 
-```bash
-ng e2e
-```
+Instalar tailwindcss-animate
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Nota: Os arquivos styles.css e ZARD_SETUP.md foram marcados como doc, então só são instalados quando o usuário adiciona a flag --with-docs, evitando sobrescrever o styles.css existente do usuário.

@@ -3,7 +3,8 @@
   "type": "repository",
   "defaultPaths": {
     "ui": "src/app/shared/components",
-    "utils": "src/app/shared/utils"
+    "utils": "src/app/shared/utils",
+    "core": "src/app/shared/core"
   },
   "items": [
     {
@@ -283,24 +284,71 @@
         {
           "type": "lib",
           "role": "file",
-          "path": "providezard.ts",
-          "relativePath": "src/app/shared/core/provider/providezard.ts",
+          "path": "core/directives/id.directive.ts",
+          "relativePath": "src/app/shared/core/directives/id.directive.ts",
+          "_imports_": [],
+          "registryDependencies": [],
+          "dependencies": [],
+          "devDependencies": []
+        },
+        {
+          "type": "lib",
+          "role": "file",
+          "path": "core/directives/string-template-outlet/string-template-outlet.directive.ts",
+          "relativePath": "src/app/shared/core/directives/string-template-outlet/string-template-outlet.directive.ts",
+          "_imports_": [],
+          "registryDependencies": [],
+          "dependencies": [],
+          "devDependencies": []
+        },
+        {
+          "type": "lib",
+          "role": "file",
+          "path": "core/index.ts",
+          "relativePath": "src/app/shared/core/index.ts",
           "_imports_": [
             {
-              "import": "./event-manager-plugins/zard-debounce-event-manager-plugin",
+              "import": "./directives/string-template-outlet/string-template-outlet.directive",
               "item": "zard-setup",
               "file": {
                 "type": "lib",
-                "path": "zard-debounce-event-manager-plugin.ts"
+                "path": "core/directives/string-template-outlet/string-template-outlet.directive.ts"
               },
               "meta": {}
             },
             {
-              "import": "./event-manager-plugins/zard-event-manager-plugin",
+              "import": "./directives/id.directive",
               "item": "zard-setup",
               "file": {
                 "type": "lib",
-                "path": "zard-event-manager-plugin.ts"
+                "path": "core/directives/id.directive.ts"
+              },
+              "meta": {}
+            },
+            {
+              "import": "./provider/providezard",
+              "item": "zard-setup",
+              "file": {
+                "type": "lib",
+                "path": "core/provider/providezard.ts"
+              },
+              "meta": {}
+            },
+            {
+              "import": "./provider/event-manager-plugins/zard-debounce-event-manager-plugin",
+              "item": "zard-setup",
+              "file": {
+                "type": "lib",
+                "path": "core/provider/event-manager-plugins/zard-debounce-event-manager-plugin.ts"
+              },
+              "meta": {}
+            },
+            {
+              "import": "./provider/event-manager-plugins/zard-event-manager-plugin",
+              "item": "zard-setup",
+              "file": {
+                "type": "lib",
+                "path": "core/provider/event-manager-plugins/zard-event-manager-plugin.ts"
               },
               "meta": {}
             }
@@ -312,7 +360,17 @@
         {
           "type": "lib",
           "role": "file",
-          "path": "zard-event-manager-plugin.ts",
+          "path": "core/provider/event-manager-plugins/zard-debounce-event-manager-plugin.ts",
+          "relativePath": "src/app/shared/core/provider/event-manager-plugins/zard-debounce-event-manager-plugin.ts",
+          "_imports_": [],
+          "registryDependencies": [],
+          "dependencies": [],
+          "devDependencies": []
+        },
+        {
+          "type": "lib",
+          "role": "file",
+          "path": "core/provider/event-manager-plugins/zard-event-manager-plugin.ts",
           "relativePath": "src/app/shared/core/provider/event-manager-plugins/zard-event-manager-plugin.ts",
           "_imports_": [],
           "registryDependencies": [],
@@ -322,9 +380,28 @@
         {
           "type": "lib",
           "role": "file",
-          "path": "zard-debounce-event-manager-plugin.ts",
-          "relativePath": "src/app/shared/core/provider/event-manager-plugins/zard-debounce-event-manager-plugin.ts",
-          "_imports_": [],
+          "path": "core/provider/providezard.ts",
+          "relativePath": "src/app/shared/core/provider/providezard.ts",
+          "_imports_": [
+            {
+              "import": "./event-manager-plugins/zard-debounce-event-manager-plugin",
+              "item": "zard-setup",
+              "file": {
+                "type": "lib",
+                "path": "core/provider/event-manager-plugins/zard-debounce-event-manager-plugin.ts"
+              },
+              "meta": {}
+            },
+            {
+              "import": "./event-manager-plugins/zard-event-manager-plugin",
+              "item": "zard-setup",
+              "file": {
+                "type": "lib",
+                "path": "core/provider/event-manager-plugins/zard-event-manager-plugin.ts"
+              },
+              "meta": {}
+            }
+          ],
           "registryDependencies": [],
           "dependencies": [],
           "devDependencies": []

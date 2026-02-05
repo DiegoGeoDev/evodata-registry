@@ -18,6 +18,7 @@ export default defineConfig({
     defaultPaths: {
       ui: 'src/app/shared/components',
       utils: 'src/app/shared/utils',
+      core: 'src/app/shared/core',
     },
     items: [
       {
@@ -55,13 +56,7 @@ export default defineConfig({
         add: 'optionally-on-init',
         files: [
           {
-            path: 'src/app/shared/core/provider/providezard.ts',
-          },
-          {
-            path: 'src/app/shared/core/provider/event-manager-plugins/zard-event-manager-plugin.ts',
-          },
-          {
-            path: 'src/app/shared/core/provider/event-manager-plugins/zard-debounce-event-manager-plugin.ts',
+            path: 'src/app/shared/core',
           },
           {
             path: 'src/styles.css',
