@@ -1,1 +1,464 @@
-{"name":"evodata-registry","type":"repository","defaultPaths":{"ui":"src/app/shared/components","utils":"src/app/shared/utils","lib":"src/app/shared"},"items":[{"name":"button","type":"ui","add":"when-added","registryDependencies":["merge-classes","icon"],"dependencies":[{"ecosystem":"js","name":"clsx","version":"^2.1.1"},{"ecosystem":"js","name":"class-variance-authority","version":"^0.7.1"}],"devDependencies":[],"files":[{"type":"ui","role":"file","path":"button/button.component.ts","relativePath":"src/app/shared/components/button/button.component.ts","_imports_":[{"import":"@/shared/utils/merge-classes","item":"merge-classes","file":{"type":"utils","path":"merge-classes.ts"},"meta":{}},{"import":"./button.variants","item":"button","file":{"type":"ui","path":"button/button.variants.ts"},"meta":{}},{"import":"@/shared/components/icon/icon.component","item":"icon","file":{"type":"ui","path":"icon/icon.component.ts"},"meta":{}}],"registryDependencies":[],"dependencies":[],"devDependencies":[]},{"type":"ui","role":"file","path":"button/button.variants.ts","relativePath":"src/app/shared/components/button/button.variants.ts","_imports_":[{"import":"@/shared/utils/merge-classes","item":"merge-classes","file":{"type":"utils","path":"merge-classes.ts"},"meta":{}}],"registryDependencies":[],"dependencies":[],"devDependencies":[]},{"type":"ui","role":"file","path":"button/index.ts","relativePath":"src/app/shared/components/button/index.ts","_imports_":[{"import":"./button.component","item":"button","file":{"type":"ui","path":"button/button.component.ts"},"meta":{}},{"import":"./button.variants","item":"button","file":{"type":"ui","path":"button/button.variants.ts"},"meta":{}}],"registryDependencies":[],"dependencies":[],"devDependencies":[]}]},{"name":"icon","type":"ui","add":"when-needed","registryDependencies":["merge-classes"],"dependencies":[{"ecosystem":"js","name":"clsx","version":"^2.1.1"},{"ecosystem":"js","name":"lucide-angular","version":"^0.563.0"},{"ecosystem":"js","name":"class-variance-authority","version":"^0.7.1"}],"devDependencies":[],"files":[{"type":"ui","role":"file","path":"icon/icon.component.ts","relativePath":"src/app/shared/components/icon/icon.component.ts","_imports_":[{"import":"@/shared/utils/merge-classes","item":"merge-classes","file":{"type":"utils","path":"merge-classes.ts"},"meta":{}},{"import":"./icon.variants","item":"icon","file":{"type":"ui","path":"icon/icon.variants.ts"},"meta":{}},{"import":"./icons","item":"icon","file":{"type":"ui","path":"icon/icons.ts"},"meta":{}}],"registryDependencies":[],"dependencies":[],"devDependencies":[]},{"type":"ui","role":"file","path":"icon/icon.variants.ts","relativePath":"src/app/shared/components/icon/icon.variants.ts","_imports_":[],"registryDependencies":[],"dependencies":[],"devDependencies":[]},{"type":"ui","role":"file","path":"icon/icons.ts","relativePath":"src/app/shared/components/icon/icons.ts","_imports_":[],"registryDependencies":[],"dependencies":[],"devDependencies":[]},{"type":"ui","role":"file","path":"icon/index.ts","relativePath":"src/app/shared/components/icon/index.ts","_imports_":[{"import":"./icon.component","item":"icon","file":{"type":"ui","path":"icon/icon.component.ts"},"meta":{}},{"import":"./icons","item":"icon","file":{"type":"ui","path":"icon/icons.ts"},"meta":{}},{"import":"./icon.variants","item":"icon","file":{"type":"ui","path":"icon/icon.variants.ts"},"meta":{}}],"registryDependencies":[],"dependencies":[],"devDependencies":[]}]},{"name":"merge-classes","type":"utils","add":"when-needed","registryDependencies":[],"dependencies":[{"ecosystem":"js","name":"clsx","version":"^2.1.1"},{"ecosystem":"js","name":"tailwind-merge","version":"^3.4.0"}],"devDependencies":[],"files":[{"type":"utils","role":"file","path":"merge-classes.ts","relativePath":"src/app/shared/utils/merge-classes.ts","_imports_":[],"registryDependencies":[],"dependencies":[],"devDependencies":[]}]},{"name":"zard-setup","type":"lib","add":"optionally-on-init","registryDependencies":[],"dependencies":[],"devDependencies":[],"files":[{"type":"lib","role":"file","path":"core/directives/id.directive.ts","relativePath":"src/app/shared/core/directives/id.directive.ts","_imports_":[],"registryDependencies":[],"dependencies":[],"devDependencies":[]},{"type":"lib","role":"file","path":"core/directives/string-template-outlet/string-template-outlet.directive.ts","relativePath":"src/app/shared/core/directives/string-template-outlet/string-template-outlet.directive.ts","_imports_":[],"registryDependencies":[],"dependencies":[],"devDependencies":[]},{"type":"lib","role":"file","path":"core/index.ts","relativePath":"src/app/shared/core/index.ts","_imports_":[{"import":"./directives/string-template-outlet/string-template-outlet.directive","item":"zard-setup","file":{"type":"lib","path":"core/directives/string-template-outlet/string-template-outlet.directive.ts"},"meta":{}},{"import":"./directives/id.directive","item":"zard-setup","file":{"type":"lib","path":"core/directives/id.directive.ts"},"meta":{}},{"import":"./provider/providezard","item":"zard-setup","file":{"type":"lib","path":"core/provider/providezard.ts"},"meta":{}},{"import":"./provider/event-manager-plugins/zard-debounce-event-manager-plugin","item":"zard-setup","file":{"type":"lib","path":"core/provider/event-manager-plugins/zard-debounce-event-manager-plugin.ts"},"meta":{}},{"import":"./provider/event-manager-plugins/zard-event-manager-plugin","item":"zard-setup","file":{"type":"lib","path":"core/provider/event-manager-plugins/zard-event-manager-plugin.ts"},"meta":{}}],"registryDependencies":[],"dependencies":[],"devDependencies":[]},{"type":"lib","role":"file","path":"core/provider/event-manager-plugins/zard-debounce-event-manager-plugin.ts","relativePath":"src/app/shared/core/provider/event-manager-plugins/zard-debounce-event-manager-plugin.ts","_imports_":[],"registryDependencies":[],"dependencies":[],"devDependencies":[]},{"type":"lib","role":"file","path":"core/provider/event-manager-plugins/zard-event-manager-plugin.ts","relativePath":"src/app/shared/core/provider/event-manager-plugins/zard-event-manager-plugin.ts","_imports_":[],"registryDependencies":[],"dependencies":[],"devDependencies":[]},{"type":"lib","role":"file","path":"core/provider/providezard.ts","relativePath":"src/app/shared/core/provider/providezard.ts","_imports_":[{"import":"./event-manager-plugins/zard-debounce-event-manager-plugin","item":"zard-setup","file":{"type":"lib","path":"core/provider/event-manager-plugins/zard-debounce-event-manager-plugin.ts"},"meta":{}},{"import":"./event-manager-plugins/zard-event-manager-plugin","item":"zard-setup","file":{"type":"lib","path":"core/provider/event-manager-plugins/zard-event-manager-plugin.ts"},"meta":{}}],"registryDependencies":[],"dependencies":[],"devDependencies":[]},{"type":"lib","role":"doc","path":"styles.css","relativePath":"src/styles.css","_imports_":[],"registryDependencies":[],"dependencies":[],"devDependencies":[{"ecosystem":"js","name":"tailwindcss","version":"^4.1.12"},{"ecosystem":"js","name":"tailwindcss-animate","version":"^1.0.7"}]},{"type":"lib","role":"doc","path":"ZARD_SETUP.md","relativePath":"ZARD_SETUP.md","_imports_":[],"registryDependencies":[],"dependencies":[],"devDependencies":[]}]}]}
+{
+  "name": "evodata-registry",
+  "type": "repository",
+  "defaultPaths": {
+    "blocks": "src/app/shared/blocks",
+    "components": "src/app/shared/components",
+    "utils": "src/app/shared/utils",
+    "lib": "src/app/shared"
+  },
+  "items": [
+    {
+      "name": "button",
+      "type": "components",
+      "add": "when-added",
+      "registryDependencies": [
+        "merge-classes",
+        "icon"
+      ],
+      "dependencies": [
+        {
+          "ecosystem": "js",
+          "name": "clsx",
+          "version": "^2.1.1"
+        },
+        {
+          "ecosystem": "js",
+          "name": "class-variance-authority",
+          "version": "^0.7.1"
+        }
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "type": "components",
+          "role": "file",
+          "path": "button/button.component.ts",
+          "relativePath": "src/app/shared/components/button/button.component.ts",
+          "_imports_": [
+            {
+              "import": "@/shared/utils/merge-classes",
+              "item": "merge-classes",
+              "file": {
+                "type": "utils",
+                "path": "merge-classes.ts"
+              },
+              "meta": {}
+            },
+            {
+              "import": "./button.variants",
+              "item": "button",
+              "file": {
+                "type": "components",
+                "path": "button/button.variants.ts"
+              },
+              "meta": {}
+            },
+            {
+              "import": "@/shared/components/icon/icon.component",
+              "item": "icon",
+              "file": {
+                "type": "components",
+                "path": "icon/icon.component.ts"
+              },
+              "meta": {}
+            }
+          ],
+          "registryDependencies": [],
+          "dependencies": [],
+          "devDependencies": []
+        },
+        {
+          "type": "components",
+          "role": "file",
+          "path": "button/button.variants.ts",
+          "relativePath": "src/app/shared/components/button/button.variants.ts",
+          "_imports_": [
+            {
+              "import": "@/shared/utils/merge-classes",
+              "item": "merge-classes",
+              "file": {
+                "type": "utils",
+                "path": "merge-classes.ts"
+              },
+              "meta": {}
+            }
+          ],
+          "registryDependencies": [],
+          "dependencies": [],
+          "devDependencies": []
+        },
+        {
+          "type": "components",
+          "role": "file",
+          "path": "button/index.ts",
+          "relativePath": "src/app/shared/components/button/index.ts",
+          "_imports_": [
+            {
+              "import": "./button.component",
+              "item": "button",
+              "file": {
+                "type": "components",
+                "path": "button/button.component.ts"
+              },
+              "meta": {}
+            },
+            {
+              "import": "./button.variants",
+              "item": "button",
+              "file": {
+                "type": "components",
+                "path": "button/button.variants.ts"
+              },
+              "meta": {}
+            }
+          ],
+          "registryDependencies": [],
+          "dependencies": [],
+          "devDependencies": []
+        }
+      ]
+    },
+    {
+      "name": "icon",
+      "type": "components",
+      "add": "when-needed",
+      "registryDependencies": [
+        "merge-classes"
+      ],
+      "dependencies": [
+        {
+          "ecosystem": "js",
+          "name": "clsx",
+          "version": "^2.1.1"
+        },
+        {
+          "ecosystem": "js",
+          "name": "lucide-angular",
+          "version": "^0.563.0"
+        },
+        {
+          "ecosystem": "js",
+          "name": "class-variance-authority",
+          "version": "^0.7.1"
+        }
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "type": "components",
+          "role": "file",
+          "path": "icon/icon.component.ts",
+          "relativePath": "src/app/shared/components/icon/icon.component.ts",
+          "_imports_": [
+            {
+              "import": "@/shared/utils/merge-classes",
+              "item": "merge-classes",
+              "file": {
+                "type": "utils",
+                "path": "merge-classes.ts"
+              },
+              "meta": {}
+            },
+            {
+              "import": "./icon.variants",
+              "item": "icon",
+              "file": {
+                "type": "components",
+                "path": "icon/icon.variants.ts"
+              },
+              "meta": {}
+            },
+            {
+              "import": "./icons",
+              "item": "icon",
+              "file": {
+                "type": "components",
+                "path": "icon/icons.ts"
+              },
+              "meta": {}
+            }
+          ],
+          "registryDependencies": [],
+          "dependencies": [],
+          "devDependencies": []
+        },
+        {
+          "type": "components",
+          "role": "file",
+          "path": "icon/icon.variants.ts",
+          "relativePath": "src/app/shared/components/icon/icon.variants.ts",
+          "_imports_": [],
+          "registryDependencies": [],
+          "dependencies": [],
+          "devDependencies": []
+        },
+        {
+          "type": "components",
+          "role": "file",
+          "path": "icon/icons.ts",
+          "relativePath": "src/app/shared/components/icon/icons.ts",
+          "_imports_": [],
+          "registryDependencies": [],
+          "dependencies": [],
+          "devDependencies": []
+        },
+        {
+          "type": "components",
+          "role": "file",
+          "path": "icon/index.ts",
+          "relativePath": "src/app/shared/components/icon/index.ts",
+          "_imports_": [
+            {
+              "import": "./icon.component",
+              "item": "icon",
+              "file": {
+                "type": "components",
+                "path": "icon/icon.component.ts"
+              },
+              "meta": {}
+            },
+            {
+              "import": "./icons",
+              "item": "icon",
+              "file": {
+                "type": "components",
+                "path": "icon/icons.ts"
+              },
+              "meta": {}
+            },
+            {
+              "import": "./icon.variants",
+              "item": "icon",
+              "file": {
+                "type": "components",
+                "path": "icon/icon.variants.ts"
+              },
+              "meta": {}
+            }
+          ],
+          "registryDependencies": [],
+          "dependencies": [],
+          "devDependencies": []
+        }
+      ]
+    },
+    {
+      "name": "merge-classes",
+      "type": "utils",
+      "add": "when-needed",
+      "registryDependencies": [],
+      "dependencies": [
+        {
+          "ecosystem": "js",
+          "name": "clsx",
+          "version": "^2.1.1"
+        },
+        {
+          "ecosystem": "js",
+          "name": "tailwind-merge",
+          "version": "^3.4.0"
+        }
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "type": "utils",
+          "role": "file",
+          "path": "merge-classes.ts",
+          "relativePath": "src/app/shared/utils/merge-classes.ts",
+          "_imports_": [],
+          "registryDependencies": [],
+          "dependencies": [],
+          "devDependencies": []
+        }
+      ]
+    },
+    {
+      "name": "number",
+      "type": "utils",
+      "add": "when-needed",
+      "registryDependencies": [],
+      "dependencies": [],
+      "devDependencies": [],
+      "files": [
+        {
+          "type": "utils",
+          "role": "file",
+          "path": "number.ts",
+          "relativePath": "src/app/shared/utils/number.ts",
+          "_imports_": [],
+          "registryDependencies": [],
+          "dependencies": [],
+          "devDependencies": []
+        }
+      ]
+    },
+    {
+      "name": "zard-setup",
+      "type": "lib",
+      "add": "optionally-on-init",
+      "registryDependencies": [],
+      "dependencies": [],
+      "devDependencies": [],
+      "files": [
+        {
+          "type": "lib",
+          "role": "file",
+          "path": "string-template-outlet.directive.ts",
+          "relativePath": "src/app/shared/core/directives/string-template-outlet/string-template-outlet.directive.ts",
+          "_imports_": [],
+          "registryDependencies": [],
+          "dependencies": [],
+          "devDependencies": []
+        },
+        {
+          "type": "lib",
+          "role": "file",
+          "path": "id.directive.ts",
+          "relativePath": "src/app/shared/core/directives/id.directive.ts",
+          "_imports_": [],
+          "registryDependencies": [],
+          "dependencies": [],
+          "devDependencies": []
+        },
+        {
+          "type": "lib",
+          "role": "file",
+          "path": "zard-debounce-event-manager-plugin.ts",
+          "relativePath": "src/app/shared/core/provider/event-manager-plugins/zard-debounce-event-manager-plugin.ts",
+          "_imports_": [],
+          "registryDependencies": [],
+          "dependencies": [],
+          "devDependencies": []
+        },
+        {
+          "type": "lib",
+          "role": "file",
+          "path": "zard-event-manager-plugin.ts",
+          "relativePath": "src/app/shared/core/provider/event-manager-plugins/zard-event-manager-plugin.ts",
+          "_imports_": [],
+          "registryDependencies": [],
+          "dependencies": [],
+          "devDependencies": []
+        },
+        {
+          "type": "lib",
+          "role": "file",
+          "path": "providezard.ts",
+          "relativePath": "src/app/shared/core/provider/providezard.ts",
+          "_imports_": [
+            {
+              "import": "./event-manager-plugins/zard-debounce-event-manager-plugin",
+              "item": "zard-setup",
+              "file": {
+                "type": "lib",
+                "path": "zard-debounce-event-manager-plugin.ts"
+              },
+              "meta": {}
+            },
+            {
+              "import": "./event-manager-plugins/zard-event-manager-plugin",
+              "item": "zard-setup",
+              "file": {
+                "type": "lib",
+                "path": "zard-event-manager-plugin.ts"
+              },
+              "meta": {}
+            }
+          ],
+          "registryDependencies": [],
+          "dependencies": [],
+          "devDependencies": []
+        },
+        {
+          "type": "lib",
+          "role": "file",
+          "path": "index.ts",
+          "relativePath": "src/app/shared/core/index.ts",
+          "_imports_": [
+            {
+              "import": "./directives/string-template-outlet/string-template-outlet.directive",
+              "item": "zard-setup",
+              "file": {
+                "type": "lib",
+                "path": "string-template-outlet.directive.ts"
+              },
+              "meta": {}
+            },
+            {
+              "import": "./directives/id.directive",
+              "item": "zard-setup",
+              "file": {
+                "type": "lib",
+                "path": "id.directive.ts"
+              },
+              "meta": {}
+            },
+            {
+              "import": "./provider/providezard",
+              "item": "zard-setup",
+              "file": {
+                "type": "lib",
+                "path": "providezard.ts"
+              },
+              "meta": {}
+            },
+            {
+              "import": "./provider/event-manager-plugins/zard-debounce-event-manager-plugin",
+              "item": "zard-setup",
+              "file": {
+                "type": "lib",
+                "path": "zard-debounce-event-manager-plugin.ts"
+              },
+              "meta": {}
+            },
+            {
+              "import": "./provider/event-manager-plugins/zard-event-manager-plugin",
+              "item": "zard-setup",
+              "file": {
+                "type": "lib",
+                "path": "zard-event-manager-plugin.ts"
+              },
+              "meta": {}
+            }
+          ],
+          "registryDependencies": [],
+          "dependencies": [],
+          "devDependencies": []
+        },
+        {
+          "type": "lib",
+          "role": "doc",
+          "path": "styles.css",
+          "relativePath": "src/styles.css",
+          "_imports_": [],
+          "registryDependencies": [],
+          "dependencies": [],
+          "devDependencies": [
+            {
+              "ecosystem": "js",
+              "name": "tailwindcss",
+              "version": "^4.1.12"
+            },
+            {
+              "ecosystem": "js",
+              "name": "tailwindcss-animate",
+              "version": "^1.0.7"
+            }
+          ]
+        },
+        {
+          "type": "lib",
+          "role": "doc",
+          "path": "ZARD_SETUP.md",
+          "relativePath": "ZARD_SETUP.md",
+          "_imports_": [],
+          "registryDependencies": [],
+          "dependencies": [],
+          "devDependencies": []
+        }
+      ]
+    }
+  ]
+}

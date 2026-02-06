@@ -16,14 +16,33 @@ export default defineConfig({
       '@angular/platform-browser',
     ],
     defaultPaths: {
-      ui: 'src/app/shared/components',
+      blocks: 'src/app/shared/blocks',
+      components: 'src/app/shared/components',
       utils: 'src/app/shared/utils',
       lib: 'src/app/shared',
     },
     items: [
       {
+        name: 'accordion',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/accordion',
+          },
+        ],
+      },
+      {
+        name: 'alert',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/alert',
+          },
+        ],
+      },
+      {
         name: 'button',
-        type: 'ui',
+        type: 'components',
         files: [
           {
             path: 'src/app/shared/components/button',
@@ -32,7 +51,7 @@ export default defineConfig({
       },
       {
         name: 'icon',
-        type: 'ui',
+        type: 'components',
         add: 'when-needed',
         files: [
           {
@@ -51,12 +70,37 @@ export default defineConfig({
         ],
       },
       {
+        name: 'number',
+        type: 'utils',
+        add: 'when-needed',
+        files: [
+          {
+            path: 'src/app/shared/utils/number.ts',
+          },
+        ],
+      },
+      {
         name: 'zard-setup',
         type: 'lib',
         add: 'optionally-on-init',
         files: [
           {
-            path: 'src/app/shared/core',
+            path: 'src/app/shared/core/directives/string-template-outlet/string-template-outlet.directive.ts',
+          },
+          {
+            path: 'src/app/shared/core/directives/id.directive.ts',
+          },
+          {
+            path: 'src/app/shared/core/provider/event-manager-plugins/zard-debounce-event-manager-plugin.ts',
+          },
+          {
+            path: 'src/app/shared/core/provider/event-manager-plugins/zard-event-manager-plugin.ts',
+          },
+          {
+            path: 'src/app/shared/core/provider/providezard.ts',
+          },
+          {
+            path: 'src/app/shared/core/index.ts',
           },
           {
             path: 'src/styles.css',
