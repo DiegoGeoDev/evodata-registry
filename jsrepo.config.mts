@@ -194,6 +194,15 @@ export default defineConfig({
         ],
       },
       {
+        name: 'form',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/form',
+          },
+        ],
+      },
+      {
         name: 'icon',
         type: 'components',
         add: 'when-needed',
@@ -210,6 +219,26 @@ export default defineConfig({
         files: [
           {
             path: 'src/app/shared/components/input',
+          },
+        ],
+      },
+      {
+        name: 'input-group',
+        type: 'components',
+        add: 'when-needed',
+        files: [
+          {
+            path: 'src/app/shared/components/input-group',
+          },
+        ],
+      },
+      {
+        name: 'kdb',
+        type: 'components',
+        add: 'when-needed',
+        files: [
+          {
+            path: 'src/app/shared/components/kdb',
           },
         ],
       },
