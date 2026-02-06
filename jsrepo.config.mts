@@ -41,11 +41,83 @@ export default defineConfig({
         ],
       },
       {
+        name: 'alert-dialog',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/alert-dialog',
+          },
+        ],
+      },
+      {
+        name: 'avatar',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/avatar',
+          },
+        ],
+      },
+      {
+        name: 'badge',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/badge',
+          },
+        ],
+      },
+      {
+        name: 'breadcrumb',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/breadcrumb',
+          },
+        ],
+      },
+      {
         name: 'button',
         type: 'components',
         files: [
           {
             path: 'src/app/shared/components/button',
+          },
+        ],
+      },
+      {
+        name: 'button-group',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/button-group',
+          },
+        ],
+      },
+      {
+        name: 'calendar',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/calendar',
+          },
+        ],
+      },
+      {
+        name: 'divider',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/divider',
+          },
+        ],
+      },
+      {
+        name: 'select',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/select',
           },
         ],
       },
