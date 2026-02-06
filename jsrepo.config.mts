@@ -273,12 +273,32 @@ export default defineConfig({
         ],
       },
       {
+        name: 'pagination',
+        type: 'components',
+        add: 'when-needed',
+        files: [
+          {
+            path: 'src/app/shared/components/pagination',
+          },
+        ],
+      },
+      {
         name: 'popover',
         type: 'components',
         add: 'when-needed',
         files: [
           {
             path: 'src/app/shared/components/popover',
+          },
+        ],
+      },
+      {
+        name: 'progress-bar',
+        type: 'components',
+        add: 'when-needed',
+        files: [
+          {
+            path: 'src/app/shared/components/progress-bar',
           },
         ],
       },
