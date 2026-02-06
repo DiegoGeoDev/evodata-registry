@@ -243,6 +243,36 @@ export default defineConfig({
         ],
       },
       {
+        name: 'layout',
+        type: 'components',
+        add: 'when-needed',
+        files: [
+          {
+            path: 'src/app/shared/components/layout',
+          },
+        ],
+      },
+      {
+        name: 'loader',
+        type: 'components',
+        add: 'when-needed',
+        files: [
+          {
+            path: 'src/app/shared/components/loader',
+          },
+        ],
+      },
+      {
+        name: 'menu',
+        type: 'components',
+        add: 'when-needed',
+        files: [
+          {
+            path: 'src/app/shared/components/menu',
+          },
+        ],
+      },
+      {
         name: 'popover',
         type: 'components',
         add: 'when-needed',
