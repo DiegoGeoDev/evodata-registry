@@ -104,6 +104,69 @@ export default defineConfig({
         ],
       },
       {
+        name: 'card',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/card',
+          },
+        ],
+      },
+      {
+        name: 'carousel',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/carousel',
+          },
+        ],
+      },
+      {
+        name: 'checkbox',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/checkbox',
+          },
+        ],
+      },
+      {
+        name: 'combobox',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/combobox',
+          },
+        ],
+      },
+      {
+        name: 'command',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/command',
+          },
+        ],
+      },
+      {
+        name: 'date-picker',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/date-picker',
+          },
+        ],
+      },
+      {
+        name: 'dialog',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/dialog',
+          },
+        ],
+      },
+      {
         name: 'divider',
         type: 'components',
         files: [
@@ -113,11 +176,20 @@ export default defineConfig({
         ],
       },
       {
-        name: 'select',
+        name: 'dropdown',
         type: 'components',
         files: [
           {
-            path: 'src/app/shared/components/select',
+            path: 'src/app/shared/components/dropdown',
+          },
+        ],
+      },
+      {
+        name: 'empty',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/empty',
           },
         ],
       },
@@ -128,6 +200,35 @@ export default defineConfig({
         files: [
           {
             path: 'src/app/shared/components/icon',
+          },
+        ],
+      },
+      {
+        name: 'input',
+        type: 'components',
+        add: 'when-needed',
+        files: [
+          {
+            path: 'src/app/shared/components/input',
+          },
+        ],
+      },
+      {
+        name: 'popover',
+        type: 'components',
+        add: 'when-needed',
+        files: [
+          {
+            path: 'src/app/shared/components/popover',
+          },
+        ],
+      },
+      {
+        name: 'select',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/select',
           },
         ],
       },
