@@ -1,6 +1,22 @@
 # Zard UI Setup Instructions
 
-## 1. Add Provider to app.config.ts
+## 1. Update tsconfig.json
+
+```json
+// ... your existing tsconfig.json content
+"compilerOptions": {
+  // ... your existing compiler options
+  "baseUrl": "./",
+  "paths": {
+    "@/*": [
+      "src/app/*"
+    ]
+  }
+},
+// ... your existing tsconfig.json content
+```
+
+## 2. Add Provider to app.config.ts
 
 Import and add the `provideZard()` provider to your application configuration:
 
@@ -15,7 +31,7 @@ export const appConfig: ApplicationConfig = {
 };
 ```
 
-## 2. Add Styles to styles.css
+## 3. Add Styles to styles.css
 
 The `styles.css` file included contains:
 
@@ -33,7 +49,7 @@ Make sure to:
 
 2. Copy the content from the provided `styles.css` to your project's `src/styles.css`
 
-## 3. Dependencies
+## 4. Dependencies
 
 The Zard setup requires these npm packages:
 

@@ -337,22 +337,7 @@ export default defineConfig({
         add: 'optionally-on-init',
         files: [
           {
-            path: 'src/app/shared/core/directives/string-template-outlet/string-template-outlet.directive.ts',
-          },
-          {
-            path: 'src/app/shared/core/directives/id.directive.ts',
-          },
-          {
-            path: 'src/app/shared/core/provider/event-manager-plugins/zard-debounce-event-manager-plugin.ts',
-          },
-          {
-            path: 'src/app/shared/core/provider/event-manager-plugins/zard-event-manager-plugin.ts',
-          },
-          {
-            path: 'src/app/shared/core/provider/providezard.ts',
-          },
-          {
-            path: 'src/app/shared/core/index.ts',
+            path: 'src/app/shared/core',
           },
           {
             path: 'src/styles.css',
