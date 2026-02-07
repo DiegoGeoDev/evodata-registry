@@ -22,6 +22,21 @@ export default defineConfig({
       lib: 'src/app/shared',
     },
     items: [
+      // BLOCKS
+      {
+        name: 'dark-mode-toggle',
+        type: 'blocks',
+        files: [
+          {
+            path: 'src/app/shared/blocks/dark-mode-toggle',
+          },
+          {
+            path: 'src/app/shared/docs/ZARD_DARK_MODE_SETUP.md',
+            role: 'doc',
+          },
+        ],
+      },
+      // COMPONENTS
       {
         name: 'accordion',
         type: 'components',
@@ -302,6 +317,8 @@ export default defineConfig({
           },
         ],
       },
+
+      // UTILS
       {
         name: 'merge-classes',
         type: 'utils',
@@ -320,10 +337,12 @@ export default defineConfig({
           },
         ],
       },
+
+      // LIB
       {
         name: 'zard-setup',
         type: 'lib',
-        add: 'optionally-on-init',
+        // add: 'optionally-on-init',
         files: [
           {
             path: 'src/app/shared/core',
@@ -333,7 +352,7 @@ export default defineConfig({
             role: 'doc',
           },
           {
-            path: 'ZARD_SETUP.md',
+            path: 'src/app/shared/docs/ZARD_SETUP.md',
             role: 'doc',
           },
         ],
