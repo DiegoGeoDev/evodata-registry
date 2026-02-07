@@ -205,7 +205,7 @@ export default defineConfig({
       {
         name: 'icon',
         type: 'components',
-        add: 'when-needed',
+        // add: 'when-needed',
         files: [
           {
             path: 'src/app/shared/components/icon',
@@ -215,7 +215,6 @@ export default defineConfig({
       {
         name: 'input',
         type: 'components',
-        add: 'when-needed',
         files: [
           {
             path: 'src/app/shared/components/input',
@@ -225,7 +224,6 @@ export default defineConfig({
       {
         name: 'input-group',
         type: 'components',
-        add: 'when-needed',
         files: [
           {
             path: 'src/app/shared/components/input-group',
@@ -235,7 +233,6 @@ export default defineConfig({
       {
         name: 'kbd',
         type: 'components',
-        add: 'when-needed',
         files: [
           {
             path: 'src/app/shared/components/kbd',
@@ -245,7 +242,6 @@ export default defineConfig({
       {
         name: 'layout',
         type: 'components',
-        add: 'when-needed',
         files: [
           {
             path: 'src/app/shared/components/layout',
@@ -255,7 +251,6 @@ export default defineConfig({
       {
         name: 'loader',
         type: 'components',
-        add: 'when-needed',
         files: [
           {
             path: 'src/app/shared/components/loader',
@@ -265,7 +260,6 @@ export default defineConfig({
       {
         name: 'menu',
         type: 'components',
-        add: 'when-needed',
         files: [
           {
             path: 'src/app/shared/components/menu',
@@ -275,7 +269,6 @@ export default defineConfig({
       {
         name: 'pagination',
         type: 'components',
-        add: 'when-needed',
         files: [
           {
             path: 'src/app/shared/components/pagination',
@@ -285,7 +278,6 @@ export default defineConfig({
       {
         name: 'popover',
         type: 'components',
-        add: 'when-needed',
         files: [
           {
             path: 'src/app/shared/components/popover',
@@ -295,7 +287,6 @@ export default defineConfig({
       {
         name: 'progress-bar',
         type: 'components',
-        add: 'when-needed',
         files: [
           {
             path: 'src/app/shared/components/progress-bar',
@@ -314,7 +305,6 @@ export default defineConfig({
       {
         name: 'merge-classes',
         type: 'utils',
-        add: 'when-needed',
         files: [
           {
             path: 'src/app/shared/utils/merge-classes.ts',
@@ -324,7 +314,6 @@ export default defineConfig({
       {
         name: 'number',
         type: 'utils',
-        add: 'when-needed',
         files: [
           {
             path: 'src/app/shared/utils/number.ts',
