@@ -233,12 +233,12 @@ export default defineConfig({
         ],
       },
       {
-        name: 'kdb',
+        name: 'kbd',
         type: 'components',
         add: 'when-needed',
         files: [
           {
-            path: 'src/app/shared/components/kdb',
+            path: 'src/app/shared/components/kbd',
           },
         ],
       },
