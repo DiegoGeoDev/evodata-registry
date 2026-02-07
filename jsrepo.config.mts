@@ -10,7 +10,6 @@ export default defineConfig({
     excludeDeps: [
       '@angular/core',
       '@angular/common',
-      '@angular/cdk',
       '@angular/forms',
       '@angular/router',
       '@angular/platform-browser',
