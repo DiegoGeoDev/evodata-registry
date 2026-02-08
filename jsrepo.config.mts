@@ -35,6 +35,7 @@ export default defineConfig({
           },
         ],
       },
+
       // COMPONENTS
       {
         name: 'accordion',
@@ -308,11 +309,132 @@ export default defineConfig({
         ],
       },
       {
+        name: 'radio',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/radio',
+          },
+        ],
+      },
+      {
+        name: 'resizable',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/resizable',
+          },
+        ],
+      },
+      {
+        name: 'segmented',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/segmented',
+          },
+        ],
+      },
+      {
         name: 'select',
         type: 'components',
         files: [
           {
             path: 'src/app/shared/components/select',
+          },
+        ],
+      },
+      {
+        name: 'sheet',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/sheet',
+          },
+        ],
+      },
+      {
+        name: 'skeleton',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/skeleton',
+          },
+        ],
+      },
+      {
+        name: 'slider',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/slider',
+          },
+        ],
+      },
+      {
+        name: 'switch',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/switch',
+          },
+        ],
+      },
+      {
+        name: 'table',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/table',
+          },
+        ],
+      },
+      {
+        name: 'tabs',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/tabs',
+          },
+        ],
+      },
+      {
+        name: 'toast',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/toast',
+          },
+          {
+            path: 'src/app/shared/docs/ZARD_TOAST_SETUP.md',
+            role: 'doc',
+          },
+        ],
+      },
+      {
+        name: 'toggle',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/toggle',
+          },
+        ],
+      },
+      {
+        name: 'toggle-group',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/toggle-group',
+          },
+        ],
+      },
+      {
+        name: 'tooltip',
+        type: 'components',
+        files: [
+          {
+            path: 'src/app/shared/components/tooltip',
           },
         ],
       },
